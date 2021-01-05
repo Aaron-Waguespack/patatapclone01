@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Patatap Clone</title>
 	<script type="text/javascript" src="paper-full.js"></script>
@@ -8,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="patatapclone.css">
 
 	<script type="text/paperscript" canvas="myCanvas">
-	
+
 	var circles =[];
 
 	var keyData = {
@@ -182,7 +183,7 @@ function onFrame(event){
 }
 
 	function onKeyDown(event) {
-		if(keyData[event.key]){	
+		if(keyData[event.key]){
 			var maxPoint = new Point(view.size.width, view.size.height);
 			var randomPoint = Point.random();
 			var point = maxPoint * randomPoint;
@@ -192,7 +193,7 @@ function onFrame(event){
 			newCircle.fillColor=keyData[event.key].color;
 			keyData[event.key].sound.play();
 			circles.push(newCircle);
-		}	
+		}
 	}
 
 	function onFrame(event) {
@@ -204,12 +205,12 @@ function onFrame(event){
 
 	</script>
 
-<!--     <script type="text/paperscript" canvas="canvas"> -->
+	<!--     <script type="text/paperscript" canvas="canvas"> -->
 </head>
 
 <body>
-<canvas id="myCanvas" resize></canvas>
+	<div id="note"> Press Any Key </div>
+	<canvas id="myCanvas" resize></canvas>
 </body>
 
 </html>
- 
