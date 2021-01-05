@@ -2,6 +2,7 @@
 body, html {
 	height: 100%;
 	margin: 0;
+
 }
 
 canvas {
@@ -12,4 +13,9 @@ canvas {
 
 .note {
 	background: yellow;
+	height:30px;
+	border-radius: 10px;
+	margin:auto;
+	width:30%;
+	padding: 5px
 }
